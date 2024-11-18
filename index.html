@@ -8,12 +8,22 @@
     <title>Typing Speed Test Game</title>
 </head>
 <body>
-
-  <main>
-    <div class="logo-container">
-        <img src="/HeWIG9eIRo2nHvUMsplLpQ-ai-brush-removebg-rv3fn2g.png" alt="Logo Principal" class="logo">
-    </div>
-        <input type="text" class="input-field">
+    <main>
+        <div class="logo-container">
+            <img src="/HeWIG9eIRo2nHvUMsplLpQ-ai-brush-removebg-rv3fn2g.png" alt="Logo Principal" class="logo">
+        </div>
+        <div class="theme-selection">
+            <h3>Select a Theme:</h3>
+            <select id="theme-select">
+                <option value="history">History</option>
+                <option value="programming">Programming</option>
+                <option value="music">Music</option>
+            </select>
+            <button class="continue-btn">Continue</button>
+        </div>
+        <div class="input-container">
+            <input type="text" class="input-field">
+        </div>
         <div class="content-box">
             <div class="typing-text">
                 <div class="english-text">
@@ -26,8 +36,6 @@
                     <p></p>
                 </div>
             </div>
-
-            </div>
             <div class="content">
                 <ul class="result-details">
                     <li class="mistake">
@@ -39,7 +47,9 @@
                         <span>0</span>
                     </li>
                 </ul>
-                <button>Try Again</button>
+                <div class="buttons-container">
+                    <button class="try-again-btn">Try Again</button>
+                </div>
             </div>
         </div>
     </main>
