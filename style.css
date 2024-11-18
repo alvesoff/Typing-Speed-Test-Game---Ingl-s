@@ -26,12 +26,19 @@ body {
     background-color: #17a2b8;
 }
 
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px; 
+    height: auto;
+}
+
 main {
-    width: 770px;
+    width: 1200px;
     padding: 35px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0,05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
 }
 
 .input-field {
@@ -41,17 +48,39 @@ main {
 }
 
 .content-box {
-    padding: 13px 20px 0;
+    padding: 13px 20px;
     border-radius: 10px;
     border: 1px solid #bfbfbf;
 }
 
 .typing-text {
-    overflow: hidden;
-    max-width: 256px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.typing-text::-webkit-scrollbar{
+.english-text, .translation-text {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+}
+
+.english-text {
+    background-color: #f0f8ff;
+}
+
+.translation-text {
+    background-color: #fff0f5;
+}
+
+.separator {
+    width: 2%;
+    border-left: 2px solid #bfbfbf;
+    height: auto;
+}
+
+.typing-text::-webkit-scrollbar {
     width: 0;
 }
 
@@ -91,7 +120,7 @@ main {
     opacity: 0;
     border-radius: 5px;
     background-color: #17a2b8;
-    animation: blink Is ease-in-out infinite;
+    animation: blink 1s ease-in-out infinite;
 }
 
 @keyframes blink {
@@ -126,6 +155,14 @@ main {
 .content button:active {
     transform: scale(0.97);
 }
+
+.result-details {
+    
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 10px; 
+}
+
 
 .content .result-details {
     display: flex;
