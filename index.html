@@ -8,6 +8,26 @@
     <title>Typing Speed Test Game</title>
 </head>
 <body>
+    <!-- Menu lateral -->
+    <div class="side-menu">
+        <button class="close-menu">✖</button>
+        <h2>Game Menu</h2>
+        <ul>
+            <li><button class="restart-btn">Restart</button></li>
+            <li>
+                <label for="difficulty-select">Difficulty:</label>
+                <select id="difficulty-select">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </li>
+            <li><button class="view-stats-btn">View Stats</button></li>
+        </ul>
+    </div>
+
+    <button class="open-menu">☰</button>
+
     <main>
         <div class="logo-container">
             <img src="/HeWIG9eIRo2nHvUMsplLpQ-ai-brush-removebg-rv3fn2g.png" alt="Logo Principal" class="logo">
@@ -27,24 +47,28 @@
         <div class="content-box">
             <div class="typing-text">
                 <div class="english-text">
-                    <h3>INGLÊS</h3>
+                    <h3>ENGLISH</h3>
                     <p></p>
                 </div>
                 <div class="separator"></div>
                 <div class="translation-text">
-                    <h3>PORTUGUÊS</h3>
+                    <h3>PORTUGUESE</h3>
                     <p></p>
                 </div>
             </div>
             <div class="content">
                 <ul class="result-details">
                     <li class="mistake">
-                        <p>Error:</p>
+                        <p>Errors:</p>
                         <span>0</span>
                     </li>
                     <li class="score">
                         <p>Score:</p>
                         <span>0</span>
+                    </li>
+                    <li class="phase">
+                        <p>Phase:</p>
+                        <span>1</span>
                     </li>
                 </ul>
                 <div class="buttons-container">
